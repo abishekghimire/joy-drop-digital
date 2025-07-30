@@ -1,4 +1,5 @@
-import { Heart, Gift, Cake, CircleDot } from "lucide-react";
+import { Heart, Gift, Cake } from "lucide-react";
+import { Balloon } from "./Balloon";
 import heroImage from "@/assets/birthday-hero.jpg";
 
 export const HeroSection = () => {
@@ -26,28 +27,34 @@ export const HeroSection = () => {
       
       {/* Floating Balloons */}
       <div className="absolute top-16 left-1/4 animate-float" style={{ animationDelay: '0.5s' }}>
-        <CircleDot className="w-6 h-6 text-red-400 animate-sparkle" />
+        <Balloon color="#ef4444" size="small" />
       </div>
       <div className="absolute top-24 right-1/4 animate-float" style={{ animationDelay: '1.5s' }}>
-        <CircleDot className="w-8 h-8 text-blue-400 animate-sparkle" />
+        <Balloon color="#3b82f6" size="medium" />
       </div>
       <div className="absolute top-40 left-1/3 animate-float" style={{ animationDelay: '0.8s' }}>
-        <CircleDot className="w-7 h-7 text-green-400 animate-sparkle" />
+        <Balloon color="#22c55e" size="small" />
       </div>
       <div className="absolute top-28 right-1/3 animate-float" style={{ animationDelay: '2.2s' }}>
-        <CircleDot className="w-9 h-9 text-purple-400 animate-sparkle" />
+        <Balloon color="#a855f7" size="large" />
       </div>
       <div className="absolute bottom-40 right-10 animate-float" style={{ animationDelay: '1.8s' }}>
-        <CircleDot className="w-6 h-6 text-yellow-400 animate-sparkle" />
+        <Balloon color="#eab308" size="small" />
       </div>
       <div className="absolute bottom-48 left-1/2 animate-float" style={{ animationDelay: '0.3s' }}>
-        <CircleDot className="w-8 h-8 text-pink-400 animate-sparkle" />
+        <Balloon color="#ec4899" size="medium" />
       </div>
       <div className="absolute top-60 left-16 animate-float" style={{ animationDelay: '2.5s' }}>
-        <CircleDot className="w-7 h-7 text-orange-400 animate-sparkle" />
+        <Balloon color="#f97316" size="small" />
       </div>
       <div className="absolute bottom-60 right-20 animate-float" style={{ animationDelay: '1.2s' }}>
-        <CircleDot className="w-6 h-6 text-cyan-400 animate-sparkle" />
+        <Balloon color="#06b6d4" size="medium" />
+      </div>
+      <div className="absolute top-80 right-1/5 animate-float" style={{ animationDelay: '3s' }}>
+        <Balloon color="#84cc16" size="small" />
+      </div>
+      <div className="absolute bottom-80 left-1/5 animate-float" style={{ animationDelay: '2.8s' }}>
+        <Balloon color="#f59e0b" size="medium" />
       </div>
       
       {/* Main Content */}
