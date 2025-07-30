@@ -1,4 +1,4 @@
-import { Heart, Gift, Cake } from "lucide-react";
+import { Heart, Gift, Cake, CircleDot } from "lucide-react";
 import heroImage from "@/assets/birthday-hero.jpg";
 
 export const HeroSection = () => {
@@ -22,6 +22,32 @@ export const HeroSection = () => {
       </div>
       <div className="absolute bottom-32 left-20 animate-float" style={{ animationDelay: '2s' }}>
         <Cake className="w-12 h-12 text-birthday-warm animate-sparkle" />
+      </div>
+      
+      {/* Floating Balloons */}
+      <div className="absolute top-16 left-1/4 animate-float" style={{ animationDelay: '0.5s' }}>
+        <CircleDot className="w-6 h-6 text-red-400 animate-sparkle" />
+      </div>
+      <div className="absolute top-24 right-1/4 animate-float" style={{ animationDelay: '1.5s' }}>
+        <CircleDot className="w-8 h-8 text-blue-400 animate-sparkle" />
+      </div>
+      <div className="absolute top-40 left-1/3 animate-float" style={{ animationDelay: '0.8s' }}>
+        <CircleDot className="w-7 h-7 text-green-400 animate-sparkle" />
+      </div>
+      <div className="absolute top-28 right-1/3 animate-float" style={{ animationDelay: '2.2s' }}>
+        <CircleDot className="w-9 h-9 text-purple-400 animate-sparkle" />
+      </div>
+      <div className="absolute bottom-40 right-10 animate-float" style={{ animationDelay: '1.8s' }}>
+        <CircleDot className="w-6 h-6 text-yellow-400 animate-sparkle" />
+      </div>
+      <div className="absolute bottom-48 left-1/2 animate-float" style={{ animationDelay: '0.3s' }}>
+        <CircleDot className="w-8 h-8 text-pink-400 animate-sparkle" />
+      </div>
+      <div className="absolute top-60 left-16 animate-float" style={{ animationDelay: '2.5s' }}>
+        <CircleDot className="w-7 h-7 text-orange-400 animate-sparkle" />
+      </div>
+      <div className="absolute bottom-60 right-20 animate-float" style={{ animationDelay: '1.2s' }}>
+        <CircleDot className="w-6 h-6 text-cyan-400 animate-sparkle" />
       </div>
       
       {/* Main Content */}
