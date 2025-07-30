@@ -13,8 +13,8 @@ export const PersonalMessage = () => {
             A special note just for you
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Card className="p-8 shadow-warm bg-gradient-to-br from-birthday-rose to-birthday-cream animate-fade-in">
             <div className="flex items-center mb-6">
               <Sparkles className="w-8 h-8 text-birthday-gold mr-3" />
@@ -63,14 +63,20 @@ export const PersonalMessage = () => {
             </div>
           </Card>
         </div>
-        
-        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+         */}
+        <div
+          className="mt-12 text-center animate-fade-in"
+          style={{ animationDelay: "0.4s" }}
+        >
           <Card className="inline-block p-8 shadow-celebration bg-card/90 backdrop-blur-sm">
             <h3 className="font-serif text-3xl font-bold text-primary mb-4">
               Today We Celebrate YOU! 🎂
             </h3>
             <p className="text-xl text-muted-foreground max-w-2xl">
-              Thank you for being the wonderful person you are. Your birthday is a celebration of all the joy, love, and light you bring into this world. Here's to many more years of happiness, adventure, and beautiful memories together!
+              Thank you for being the wonderful person you are. Your birthday is
+              a celebration of all the joy, love, and light you bring into this
+              world. Here's to many more years of happiness, adventure, and
+              beautiful memories together!
             </p>
           </Card>
         </div>
