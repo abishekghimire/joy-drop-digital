@@ -8,6 +8,9 @@ import photoSix from "@/assets/pose.jpg";
 import photoSeven from "@/assets/stu.jpg";
 import photoEight from "@/assets/sari.jpg";
 import photoNine from "@/assets/cartoon.jpg";
+import photoTen from "@/assets/fav.jpg";
+import photoEleven from "@/assets/cow.jpg";
+import photoTwelve from "@/assets/water.jpg";
 
 const photos = [
   {
@@ -52,6 +55,21 @@ const photos = [
   },
   {
     src: photoNine,
+    alt: "Birthday Cake",
+    title: "Sweet Moments",
+  },
+  {
+    src: photoTen,
+    alt: "Birthday Cake",
+    title: "Sweet Moments",
+  },
+  {
+    src: photoEleven,
+    alt: "Birthday Cake",
+    title: "Sweet Moments",
+  },
+  {
+    src: photoTwelve,
     alt: "Birthday Cake",
     title: "Sweet Moments",
   },
