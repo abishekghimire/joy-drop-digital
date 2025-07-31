@@ -19,7 +19,7 @@ export const LetterSection = () => {
 
           <div className="prose prose-lg max-w-none text-foreground">
             <p className="text-xl leading-relaxed mb-6 font-medium">
-              Dear Birthday Star,
+              Dear Nobi,
             </p>
 
             <p className="text-lg leading-relaxed mb-6">
@@ -41,12 +41,6 @@ export const LetterSection = () => {
               As you celebrate another year of life, I want you to know how much
               you mean to so many people. Your dreams are valid, your goals are
               achievable, and your happiness matters more than you know.
-            </p>
-
-            <p className="text-xl leading-relaxed font-medium">
-              Here's to celebrating you today and always! May this new year
-              bring you endless adventures, beautiful surprises, and all the
-              happiness your heart can hold.
             </p>
 
             <div className="mt-8 text-right">
