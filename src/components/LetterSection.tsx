@@ -48,7 +48,7 @@ export const LetterSection = () => {
                 With love and best wishes,
               </p>
               <p className="text-2xl font-serif font-bold text-primary mt-2">
-                Your Stranger
+                Yours, Stranger
               </p>
             </div>
           </div>
