@@ -37,12 +37,66 @@ export const ScheduledContent = ({ children }) => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-400 via-purple-400 to-blue-400 text-white p-6 relative overflow-hidden">
-      {/* Floating Balloons */}
+      {/* Floating Balloons - Added more balloons */}
       <div className="absolute top-10 left-10 w-12 h-16 bg-red-400 rounded-full opacity-80 animate-float1"></div>
       <div className="absolute top-20 right-20 w-10 h-14 bg-yellow-300 rounded-full opacity-80 animate-float2"></div>
       <div className="absolute bottom-20 left-1/4 w-8 h-12 bg-blue-300 rounded-full opacity-80 animate-float3"></div>
       <div className="absolute bottom-1/3 right-1/4 w-14 h-18 bg-green-300 rounded-full opacity-80 animate-float4"></div>
       <div className="absolute top-1/4 left-1/3 w-11 h-15 bg-purple-300 rounded-full opacity-80 animate-float5"></div>
+      {/* Additional balloons */}
+      <div className="absolute top-1/3 right-10 w-9 h-13 bg-pink-300 rounded-full opacity-80 animate-float6"></div>
+      <div className="absolute bottom-1/4 right-10 w-12 h-16 bg-orange-300 rounded-full opacity-80 animate-float7"></div>
+      <div className="absolute top-10 left-1/4 w-10 h-14 bg-teal-300 rounded-full opacity-80 animate-float8"></div>
+      <div className="absolute bottom-10 right-1/3 w-7 h-11 bg-indigo-300 rounded-full opacity-80 animate-float9"></div>
+
+      {/* Balloon strings */}
+      {[...Array(9)].map((_, i) => (
+        <div
+          key={`string-${i}`}
+          className="absolute bg-white opacity-60"
+          style={{
+            height: "40px",
+            width: "1px",
+            top:
+              i <= 4
+                ? i === 0
+                  ? "66px"
+                  : i === 1
+                  ? "94px"
+                  : i === 2
+                  ? "calc(100% - 60px)"
+                  : i === 3
+                  ? "calc(100% - 33%)"
+                  : "25%"
+                : i === 5
+                ? "33%"
+                : i === 6
+                ? "calc(100% - 25%)"
+                : i === 7
+                ? "calc(10px + 1/4 * 100%)"
+                : "calc(100% - 10px - 1/3 * 100%)",
+            left:
+              i <= 4
+                ? i === 0
+                  ? "22px"
+                  : i === 1
+                  ? "calc(100% - 80px)"
+                  : i === 2
+                  ? "25%"
+                  : i === 3
+                  ? "calc(100% - 25%)"
+                  : "33%"
+                : i === 5
+                ? "calc(100% - 40px)"
+                : i === 6
+                ? "calc(100% - 40px)"
+                : i === 7
+                ? "calc(25% + 25px)"
+                : "calc(100% - 33% + 15px)",
+            transform: "rotate(-45deg)",
+          }}
+        />
+      ))}
 
       {/* Confetti */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -96,12 +150,12 @@ export const ScheduledContent = ({ children }) => {
         </div>
 
         <p className="text-xl font-medium">
-          Get ready for an amazing birthday reveal at midnight!
+          Excited for an amazing birthday reveal at midnight?
         </p>
       </div>
 
-      {/* Birthday cake animation at bottom */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-6xl animate-bounce">
+      {/* Birthday cake animation at bottom - fixed positioning for mobile */}
+      <div className="fixed bottom-4 w-full flex justify-center text-6xl animate-bounce z-20">
         🎂
       </div>
 
@@ -162,6 +216,50 @@ export const ScheduledContent = ({ children }) => {
             transform: translateY(0) rotate(0deg);
           }
         }
+        @keyframes float6 {
+          0% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-25px) rotate(-2deg);
+          }
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+        }
+        @keyframes float7 {
+          0% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-18px) rotate(4deg);
+          }
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+        }
+        @keyframes float8 {
+          0% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-22px) rotate(-4deg);
+          }
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+        }
+        @keyframes float9 {
+          0% {
+            transform: translateY(0) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-28px) rotate(2deg);
+          }
+          100% {
+            transform: translateY(0) rotate(0deg);
+          }
+        }
         @keyframes confetti-fall {
           0% {
             transform: translateY(-100vh) rotate(0deg);
@@ -184,6 +282,18 @@ export const ScheduledContent = ({ children }) => {
         }
         .animate-float5 {
           animation: float5 4.5s ease-in-out infinite;
+        }
+        .animate-float6 {
+          animation: float6 5.5s ease-in-out infinite;
+        }
+        .animate-float7 {
+          animation: float7 4s ease-in-out infinite;
+        }
+        .animate-float8 {
+          animation: float8 3.8s ease-in-out infinite;
+        }
+        .animate-float9 {
+          animation: float9 4.2s ease-in-out infinite;
         }
       `}</style>
     </div>
