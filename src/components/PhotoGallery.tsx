@@ -105,6 +105,7 @@ export const PhotoGallery = () => {
                     <img
                       src={photo.src}
                       alt={photo.alt}
+                      loading="lazy"
                       className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
                       style={{
                         transformOrigin: `${
